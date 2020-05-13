@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         builder.setTitle("Masukan Nama")
         val inputNama = EditText(this)
         inputNama.inputType = InputType.TYPE_CLASS_TEXT
+        builder.setView(inputNama)
         builder.setPositiveButton("Oke") { dialog, _ ->
             if(inputNama.text.isNotEmpty()){
                 txtNama!!.text = inputNama.text
