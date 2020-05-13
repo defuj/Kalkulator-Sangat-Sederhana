@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textColor="@color/BLACK80"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nama Pengguna"
+        android:textColor="@color/BLACK80"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Angka"
+        android:textColor="@color/BLACK80"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/nilaiPertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai 1"
+        android:background="@drawable/bg_container_form"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/nilaiKedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nilai 2"
+        android:background="@drawable/bg_container_form"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="X"
+            tools:ignore="HardcodedText"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="÷"
+            tools:ignore="HardcodedText"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            tools:ignore="HardcodedText"
+            android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil : "
+        android:textColor="@color/BLACK80"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/txtHasil"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/BLACK80"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal">
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
